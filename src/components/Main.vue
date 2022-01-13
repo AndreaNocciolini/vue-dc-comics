@@ -29,6 +29,7 @@ export default {
         .main-content {
             background-color: black;
             h2 {
+                margin: 0;
                 padding: 2em;
             }
         }
