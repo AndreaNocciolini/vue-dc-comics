@@ -53,7 +53,23 @@
           </div>
 
           <div class="inner-container-dx">
-              
+              <!-- Empty <div>, used for logo DC big -->
+          </div>
+      </div>
+      <div class="footer-menu">
+          <div>
+              <button>SIGN UP NOW</button>
+          </div>
+
+          <div class="footer-social">
+              <h3>FOLLOW US</h3>
+              <ul>
+                  <li><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                  <li><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                  <li><a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                  <li><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                  <li><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+              </ul>
           </div>
       </div>
   </div>
@@ -95,6 +111,44 @@ export default {
             background-repeat: no-repeat;
             background-size: 55%;
             background-position: center;
+        }
+        .footer-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #303030;
+            padding: 1em;
+            button {
+                background: #303030;
+                border-color: #0282F9;
+                border-style: solid;
+                border-width: 2px;
+                color: #fff;
+                display: inline-block;
+                font-size: 20px;
+                height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                transition-duration: .3s;
+                transition-property: background-color;
+                transition-timing-function: ease;
+                width: 150px;
+            }
+            .footer-social{
+                display: flex;
+            }
+            ul{
+                list-style-type: none;
+                display: flex;
+                gap: 0.5em;
+                li a{
+                    text-decoration: none;
+                }
+            }
+            h3 {
+                display: inline-block;
+                color: #0282f9;
+            }
         }
     }
 </style>
