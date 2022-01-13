@@ -2,7 +2,8 @@
   <div class="container-footer">
       <div class="inner-container-sx">
           <div class="links-container">
-              <div>
+              <div class="support-container">
+                  <div>
                   <div>
                     <ul>
                         <h3>DC COMICS</h3>
@@ -50,27 +51,27 @@
                     <li><a href="">DC Power Vise</a></li>
                 </ul>
             </div>
-          </div>
-
-          <div class="inner-container-dx">
-              <!-- Empty <div>, used for logo DC big -->
+              </div>
           </div>
       </div>
       <div class="footer-menu">
-          <div>
-              <button>SIGN UP NOW</button>
-          </div>
+          <div class="support-container supp-cont-dx">
+            <div>
+                <button>SIGN UP NOW</button>
+            </div>
 
-          <div class="footer-social">
-              <h3>FOLLOW US</h3>
-              <ul>
-                  <li><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
-                  <li><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
-                  <li><a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
-                  <li><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                  <li><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
-              </ul>
+            <div class="footer-social">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                    <li><a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                    <li><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                    <li><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                </ul>
+            </div>
           </div>
+          
       </div>
   </div>
 </template>
@@ -86,11 +87,24 @@ export default {
         width: 100%;
         margin: 0;
         background-image: url(../assets/img/footer-bg.jpg);
+        .support-container {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                }
+        .supp-cont-dx {
+            justify-content: space-between;
+        }
         .inner-container-sx {
             display: flex;
             .links-container{
-                width: 50%;
+                width: 100%;
                 display: flex;
+                background-image: url(../assets/img/dc-logo-bg.png);
+                background-repeat: no-repeat;
+                background-size: 35%;
+                background-position-x: 85%;
+                background-position-y: 50%;
                 }
         }
         ul{ 
