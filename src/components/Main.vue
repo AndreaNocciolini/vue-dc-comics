@@ -1,6 +1,7 @@
 <template>
   <div class="container">
       <div class="jumbo-top"></div>
+      <div class="ad-new-series">CURRENT SERIES</div>
       <div class="main-content">
         <div class="inner-main-content">
           <Cards v-for="(element, index) in products"
@@ -116,11 +117,20 @@ export default {
         width: 100%;
         background-color: black;
         color: white;
+        position: relative;
         .jumbo-top {
           background-image: url(../assets/img/jumbotron.jpg);
           background-size: cover;
           width: 100%;
           height: 300px;
+        }
+        .ad-new-series {
+          position: absolute;
+          top: 283px;
+          left: 130px;  
+          background-color: #0c7cec;
+          padding: 0.6em;
+          box-shadow: 5px 1px 5px 2px #0059FF;
         }
         .main-content {
             padding: 4em;
